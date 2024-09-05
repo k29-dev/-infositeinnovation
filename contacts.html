@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Infosite Innovation - Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            background: linear-gradient(90deg, #ff6f61, #ffcc00, #4caf50, #00bcd4, #9c27b0, #e91e63);
+            background-size: 600% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            padding: 0.75rem 1rem;
+        }
+
+        .navbar-nav .nav-link:hover, .dropdown-item:hover {
+            background-color: #495057;
+            color: #ffffff;
+        }
+
+        .contact-header {
+            background-color: #ffffff;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 56px;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .contact-header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        .contact-container {
+            padding: 2rem;
+        }
+
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .char-counter {
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-align: right;
+        }
+
+        .form-control, .form-select, .form-check-input {
+            border-radius: 0.5rem;
+        }
+
+        .contact-form {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card-image {
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 100%; /* Full width of the parent */
+            max-width: 600px; /* Maximum width for the image */
+            margin: auto; /* Center the card */
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .dropdown-item {
+            color: #343a40;
+        }
+
+        .dropdown-item:hover {
+            background-color: #e9ecef;
+            color: #343a40;
+        }
+
+        /* Keyframes for the gradient animation */
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">@Infosite Innovation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html" data-section="company-profile">Company Profile</a></li>
+                            <li><a class="dropdown-item" href="about.html" data-section="goals">Goals</a></li>
+                            <li><a class="dropdown-item" href="about.html" data-section="mission">Mission</a></li>
+                            <li><a class="dropdown-item" href="about.html" data-section="objectives">Objectives</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html" data-section="major-services">Major Services</a></li>
+                            <li><a class="dropdown-item" href="services.html" data-section="minor-services">Minor Services</a></li>
+                            <li><a class="dropdown-item" href="services.html" data-section="other-services">Other Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Us Header -->
+    <div class="contact-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We are here to assist you 24/7, worldwide. Reach out to us anytime!</p>
+        </div>
+    </div>
+
+    <!-- Contact Information and Form -->
+    <div class="container contact-container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-6 contact-info">
+                <h2>Our Contact Information</h2>
+                <p><strong>Phone Numbers:</strong></p>
+                <p>+254786350022</p>
+                <p>+254705456201</p>
+                <p>+254704377202</p>
+                <p>+254745699778</p>
+                <p><strong>Email:</strong> infositeinnovation@gmail.com</p>
+                <p><strong>Location:</strong> Nairobi City, Kenya</p>
+                <p><strong>Service Availability:</strong> 24/7 Worldwide</p>
+                <!-- Image in a card shape -->
+                <div class="card card-image mt-4">
+                    <marquee direction="up"><img src="infologo.png" class="card-img-top" alt="Contact Image"></marquee>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form action="process-contact.php" method="post" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" class="form-control" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" maxlength="500" required></textarea>
+                            <div class="char-counter" id="charCounter">0/500</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-type">Type of Service:</label>
+                            <select class="form-select" id="service-type" name="service-type" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="major">Major</option>
+                                <option value="minor">Minor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred-contact">Preferred Contact Method:</label><br>
+                            <input type="radio" id="contact-email" name="preferred-contact" value="email" checked>
+                            <label for="contact-email">Email</label><br>
+                            <input type="radio" id="contact-phone" name="preferred-contact" value="phone">
+                            <label for="contact-phone">Phone</label>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                            <label class="form-check-label" for="newsletter">Subscribe to our newsletter</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 @Infosite Innovation. All Rights Reserved.</p>
+            <p>Follow us on:</p>
+            <a href="#"><img src="fb.jpg" alt="Facebook" style="width: 30px; margin: 0 5px;"></a>
+            <a href="#"><img src="twit.png" alt="Twitter" style="width: 30px; margin: 0 5px;"></a>
+            <a href="#"><img src="lin.jpg" alt="LinkedIn" style="width: 30px; margin: 0 5px;"></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Form validation
+        function validateForm() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let subject = document.getElementById('subject').value;
+            let message = document.getElementById('message').value;
+
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields.');
+                return false;
+            }
+            return true;
+        }
+
+        // Character counter for the message textarea
+        document.getElementById('message').addEventListener('input', function () {
+            let messageLength = this.value.length;
+            document.getElementById('charCounter').textContent = `${messageLength}/500`;
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

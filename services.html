@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Infosite Innovation - Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 56px;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            background: linear-gradient(90deg, #ff6f61, #ffcc00, #4caf50, #00bcd4, #9c27b0, #e91e63);
+            background-size: 600% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 0%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            padding: 0.75rem 1rem;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .dropdown-item:hover {
+            background-color: #495057;
+            color: #ffffff;
+        }
+
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .section-heading {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+            font-weight: 500;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .dropdown-item {
+            color: #343a40;
+        }
+
+        .dropdown-item:hover {
+            background-color: #e9ecef;
+            color: #343a40;
+        }
+
+        /* Initially hide all sections */
+        .section-content {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">@Infosite Innovation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html?section=company-profile">Company Profile</a></li>
+                            <li><a class="dropdown-item" href="about.html?section=goals">Goals</a></li>
+                            <li><a class="dropdown-item" href="about.html?section=mission">Mission</a></li>
+                            <li><a class="dropdown-item" href="about.html?section=objectives">Objectives</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html?section=major-services">Major Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?section=minor-services">Minor Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?section=other-services">Other Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Content -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p><marquee>Explore the wide range of services we offer to our clients.</marquee></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sections -->
+        <div id="major-services" class="section-content">
+            <h2 class="section-heading">Major Services</h2>
+            <p style="color:black;" align="center"><b>We offer a comprehensive range of IT services tailored to meet the demands of modern businesses.</b></p>
+
+                <strong>1. Website and Web System Development</strong> :-Our team excels in creating and managing bespoke websites and web-based systems tailored to your unique business requirements. We focus on enhancing your online presence and streamlining operational efficiency with innovative, user-centric designs.
+                <br>
+                <strong>2. Android App Development</strong> :- We specialize in designing and developing intuitive and feature-rich Android applications that captivate users and drive engagement. Our solutions are crafted to meet your specific needs and exceed user expectations.
+                  <br>
+                <strong>3. ICT Consultancy</strong> :- Leverage our expert advice to optimize your IT strategies and improve system performance. Our consultancy services address complex technology challenges and provide actionable insights to enhance your overall IT infrastructure.
+                  <br>
+                <strong>4. Software and Hardware Installation & Maintenance</strong> :- We offer comprehensive installation and ongoing support for both software and hardware. Our services ensure seamless operation, reduce downtime, and keep your technology running smoothly.
+                <br>
+                <strong>5. Networking</strong> :- Our networking solutions are designed to create robust and efficient network infrastructures. We enhance connectivity, security, and performance to support businesses of all sizes, ensuring reliable and scalable network solutions.
+                <br>
+                <strong>6. Data Analysis and Design</strong> :- Utilize our expertise in data analysis and design to make informed decisions and strategic plans. We employ advanced tools and techniques to create data systems that are both powerful and insightful.
+                  <br>
+                <strong>7. Cloud-Based Security</strong> :- Protect your sensitive data with our state-of-the-art cloud-based security measures. We implement comprehensive security protocols to safeguard your information and ensure compliance with industry standards.
+
+
+
+        </div>
+
+        <div id="minor-services" class="section-content">
+            <h2 class="section-heading">Minor Services</h2>
+            <p><center>Our minor services designed to ensure the smooth operation of your IT infrastructure are discussed below.</center></p>
+
+            <strong>At @Infosite Innovation</strong>, we offer a range of professional MS Office services designed to enhance your business efficiency and presentation. Our expertise includes crafting impactful PowerPoint presentations that capture and convey your ideas effectively, writing comprehensive business plans and project reports, and typing notes with precision. We also provide custom-designed certificates, logos, and posters tailored to your brand identity, and expert photo editing to ensure your visuals stand out.<p><br>
+
+            <strong>Additionally</strong>, we offer online training to help you master MS Office tools, website design and development services at a competitive fee, and meticulous data entry tasks. Our graphic design services are geared toward creating visually compelling materials that resonate with your audience, and we can develop databases using MS Access to streamline your data management processes. Let us handle your MS Office needs to help your business succeed with professionalism and efficiency.
+
+
+        </div>
+
+        <div id="other-services" class="section-content">
+            <h2 class="section-heading">Other Services</h2>
+            <p style="color: black;" align="center">Additionally, we also provide the following services.</p>
+
+            <strong>@Infosite Innovation</strong> offers a diverse range of additional services to ensure your IT infrastructure and business operations run smoothly. Our web hosting solutions provide reliable, secure, and scalable platforms for your online presence, while our expert networking troubleshooting services swiftly address and resolve connectivity issues. We also specialize in operating system installation for PCs and laptops, ensuring your devices are up-to-date and optimized for performance. Our backup and account recovery services safeguard your critical data and help you recover from any unforeseen data loss.<p><br>
+
+            <strong>In addition</strong>, we handle tax filing and returns with precision, helping you stay compliant with financial regulations. For those in need of professional drivers, we provide experienced personnel to meet your transportation needs with reliability and professionalism. Trust @Infosite Innovation to deliver comprehensive support and solutions tailored to your specific requirements, enhancing your operational efficiency and peace of mind.
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 @Infosite Innovation. All Rights Reserved.</p>
+            <p>Follow us on:</p>
+            <a href="#"><img src="fb.jpg" alt="Facebook" style="width: 30px; margin: 0 5px;"></a>
+            <a href="#"><img src="twit.png" alt="Twitter" style="width: 30px; margin: 0 5px;"></a>
+            <a href="#"><img src="lin.jpg" alt="LinkedIn" style="width: 30px; margin: 0 5px;"></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const section = urlParams.get('section');
+
+            // Hide all sections initially
+            document.querySelectorAll('.section-content').forEach(function(content) {
+                content.style.display = 'none';
+            });
+
+            // Show the relevant section based on URL parameter
+            if (section) {
+                const sectionElement = document.getElementById(section);
+                if (sectionElement) {
+                    sectionElement.style.display = 'block';
+                }
+            } else {
+                document.querySelector('#major-services').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>

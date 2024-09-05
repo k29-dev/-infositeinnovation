@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Infosite Innovation - About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 56px;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            background: linear-gradient(90deg, #ff6f61, #ffcc00, #4caf50, #00bcd4, #9c27b0, #e91e63);
+            background-size: 600% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 0%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            padding: 0.75rem 1rem;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .dropdown-item:hover {
+            background-color: #495057;
+            color: #ffffff;
+        }
+
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .jumbotron h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .section-heading {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+            font-weight: 500;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .dropdown-item {
+            color: #343a40;
+        }
+
+        .dropdown-item:hover {
+            background-color: #e9ecef;
+            color: #343a40;
+        }
+
+        /* Initially hide all sections */
+        .section-content {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">@Infosite Innovation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html?section=company-profile">Company Profile</a></li>
+                            <li><a class="dropdown-item" href="about.html?section=goals">Goals</a></li>
+                            <li><a class="dropdown-item" href="about.html?section=mission">Mission</a></li>
+                            <li><a class="dropdown-item" href="about.html?section=objectives">Objectives</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html?section=major-services">Major Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?section=minor-services">Minor Services</a></li>
+                            <li><a class="dropdown-item" href="services.html?section=other-services">Other Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Content -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Learn more about our company, mission, goals, and objectives.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sections -->
+        <div id="company-profile" class="section-content">
+            <h2 class="section-heading">Company Profile</h2>
+            <p>@Infosite Innovation is a leading IT solutions provider committed to delivering cutting-edge technology and exceptional service to clients across diverse industries. With a focus on innovation and excellence, we specialize in website and web system development, Android app development, ICT consultancy, and robust software and hardware solutions. Our expert team is dedicated to enhancing operational efficiency through tailored IT strategies, comprehensive support, and advanced security measures. At @Infosite Innovation, we prioritize client satisfaction and aim to be your trusted partner in navigating the evolving digital landscape.</p>
+        </div>
+
+        <div id="goals" class="section-content">
+            <h2 class="section-heading">Our Goals</h2>
+            <p>Our primary goal is to provide exceptional IT solutions that meet the unique needs of our clients. We strive for excellence in every project and aim to exceed our clients' expectations.</p>
+        </div>
+
+        <div id="mission" class="section-content">
+            <h2 class="section-heading">Mission</h2>
+            <p>Our mission is to empower businesses through cutting-edge technology and innovative solutions. We are committed to helping our clients achieve their objectives and stay ahead in a rapidly evolving digital landscape.</p>
+        </div>
+
+        <div id="objectives" class="section-content">
+            <h2 class="section-heading">Objectives</h2>
+            <p>Our objectives include delivering high-quality IT services, staying at the forefront of technological advancements, and ensuring complete client satisfaction. We aim to build long-term relationships with our clients and become a trusted partner in their success.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 @Infosite Innovation. All Rights Reserved.</p>
+            <p>Follow us on:</p>
+            <a href="#"><img src="fb.jpg" alt="Facebook" style="width: 30px; margin: 0 5px;"></a>
+            <a href="#"><img src="twit.png" alt="Twitter" style="width: 30px; margin: 0 5px;"></a>
+            <a href="#"><img src="lin.jpg" alt="LinkedIn" style="width: 30px; margin: 0 5px;"></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const section = urlParams.get('section');
+
+            // Hide all sections initially
+            document.querySelectorAll('.section-content').forEach(function(content) {
+                content.style.display = 'none';
+            });
+
+            // Show the relevant section based on URL parameter
+            if (section) {
+                document.getElementById(section).style.display = 'block';
+            } else {
+                document.querySelector('#company-profile').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    color: #343a40;
+    padding-top: 60px; /* Ensures space for navbar */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ecf0f1 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #ecf0f1;
+    padding: 0.75rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #34495e;
+    color: #ecf0f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #34495e;
+}
+
+.navbar-nav .dropdown-item {
+    color: #ecf0f1;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #2c3e50;
+}
+
+/* Slideshow Styles */
+.carousel {
+    margin-top: 30px; /* Increase margin between navbar and slideshow */
+}
+
+.carousel-item img {
+    border-radius: 50%; /* Elliptical shape */
+    object-fit: cover;
+    height: 500px;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+    color: #ecf0f1;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+/* Container Styles */
+.container {
+    padding: 2rem;
+}
+
+/* Section Heading Styles */
+.section-heading {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Content Styles */
+.section-content {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Unique Task Colors */
+#company-profile {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+#goals {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+#mission {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+#objectives {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+#major-services {
+    background-color: #9b59b6;
+    color: #ffffff;
+}
+
+#minor-services {
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+#other-services {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Glowing Effect */
+.glow {
+    color: #ffffff;
+    text-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12, 0 0 30px #f39c12, 0 0 40px #e74c3c, 0 0 50px #e74c3c, 0 0 60px #e74c3c, 0 0 70px #e74c3c;
+}
+
+/* Fading Effect */
+.fade-effect {
+    animation: fade 3s infinite;
+}
+
+@keyframes fade {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Gradient Background */
+.gradient-bg {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+/* Box Shadow Effect */
+.box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Utility Classes */
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.pt-5 {
+    padding-top: 3rem;
+}
+
+.pb-5 {
+    padding-bottom: 3rem;
+}
